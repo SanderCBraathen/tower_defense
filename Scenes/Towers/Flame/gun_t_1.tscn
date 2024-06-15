@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://4y4o584bpsgk"]
+
+[ext_resource type="Texture2D" uid="uid://yx6rde0quqgh" path="res://Assets/Towers/Flame/FIre_Cirkel.png" id="1_0syjk"]
+[ext_resource type="Script" path="res://Scenes/Towers/Flame/gun_t_1.gd" id="1_b6xfh"]
+
+[node name="GunT1" type="Node2D"]
+scale = Vector2(0.5, 0.5)
+script = ExtResource("1_b6xfh")
+
+[node name="Base" type="Sprite2D" parent="."]
+texture = ExtResource("1_0syjk")
+
+[node name="Turret" type="Sprite2D" parent="."]
+texture = ExtResource("1_0syjk")
+
+[node name="Marker2D" type="Marker2D" parent="Turret"]
+position = Vector2(58, 0)
